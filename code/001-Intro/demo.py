@@ -41,3 +41,10 @@ print(decorations[1]) # prints off the 1st index of our array
 # Python has inbuilt very simple ways of letting the user enter data
 colour = input("Please enter your fav colour: ")
 print(colour)
+
+# We can cast data types by wrapping the input in a casting function
+number = int(input("Enter your fav number: "))
+print(number + 5) # this fails if its a string
+
+whippedCream = bool(input("Do you want whipped cream: "))
+print(whippedCream)
