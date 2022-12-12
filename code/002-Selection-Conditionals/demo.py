@@ -51,3 +51,5 @@ else:
 # Triggers if both are true
 if shape == "triangle" and roundedCorner:
     print("Both conditions are true")
+
+    
