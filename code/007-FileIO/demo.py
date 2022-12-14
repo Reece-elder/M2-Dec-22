@@ -22,3 +22,19 @@ colours_file.close()
 with open("colours.txt", "r") as file:
     for line in file:
         print(line)
+
+colour = "red"
+new_line = True
+
+with open("newfile.txt", "a") as new_file:
+    new_file.write("Text\n")  # \n new line
+    new_file.write("Hello!\n")
+    new_file.write("new text..\n")
+    if new_line:
+        new_file.write(f"Colour is {colour}\n")
+
+words = ["apple", "bus", "bottle", "cabbage"]
+
+with open("commaFile.txt", "w") as comma_file:
+    for word in words:
+        comma_file.write(f"{word},\n")
