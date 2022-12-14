@@ -35,6 +35,10 @@ with open("newfile.txt", "a") as new_file:
 
 words = ["apple", "bus", "bottle", "cabbage"]
 
-with open("commaFile.txt", "w") as comma_file:
-    for word in words:
-        comma_file.write(f"{word},\n")
+# with open("commaFile.txt", "w") as comma_file:
+#     for word in words:
+#         comma_file.write(f"{word},\n")
+
+with open("commaFile.txt", "r") as read_file:
+    content = read_file.readlines()
+    print(content)
