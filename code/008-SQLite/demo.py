@@ -25,7 +25,9 @@ def runQuery(query):
 # print(runQuery(admin_query).fetchall())
 
 # Insert data into our table
-insert_query = f"INSERT into dogs VALUES(2, 'Tri Colour', 'Corgi', true)"
+# Insert data into ALL columns 
+# insert_query = "INSERT into dogs VALUES(3, 'Tri Colour', 'Corgi', true)"
+insert_query = "INSERT INTO dogs (colour, breed, bark) VALUES('Tri Colour', 'Corgi', true)"
 select_query = "SELECT * FROM dogs"
 runQuery(insert_query)
 print(runQuery(select_query).fetchall())
