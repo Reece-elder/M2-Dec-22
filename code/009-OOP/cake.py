@@ -16,6 +16,8 @@ print(cake.flavour) # Accessing the class cake, not best practice to do
 vic_sponge = cake()
 print(vic_sponge.toppings)
 print(vic_sponge.eatCake())
+caterpillar_cake = cake()
+print(caterpillar_cake.tiers)
 
 # Exercise - Create a class with 4 pre set attributes and one function that just returns a string 
 # for any animal you want, create 2 objects of this animal and print their attributes 
