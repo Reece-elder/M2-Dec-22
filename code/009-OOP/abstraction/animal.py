@@ -14,12 +14,17 @@ class animal(ABC):
 
 class cat(animal):
 
-    def __init__(self, fur_colour, fav_food):
+    def __init__(self, fur_colour, fav_food, size, name):
         self.fur_colour = fur_colour
         self.fav_food = fav_food
+        self.size = size
+        self.name = name
 
     # Overriding our abstract method
     def rest(self, hours):
         return f"Sleeps for {hours}"
 
-zaph = cat("Browny, blacky, beigey", "chicken sticks")
+zaph = cat("Browny, blacky, beigey", "chicken sticks", "chonky", "zaph")
+print(zaph.name)
+print(zaph.rest(12))
+
