@@ -10,9 +10,25 @@ app = Flask(__name__) # Passing in _ _ name _ _ (no spaces) into Flask
 def flask_test():
     return "Hello World"
 
+@app.route("/route")
+def route():
+    colours = ["red","green", "blue", "purple"]
+    for colour in colours:
+        print(colour)
+    return colours
+
+@app.route("/shop/<id>")
+def shop_page(id):
+    # data = db.findData(id)
+    # return data
+    return f"Page for shop {id}"
+
 
 # Setting up my server
 if __name__ == "__main__":
     app.run(host = "0.0.0.0", port=5000)
 
 # Exercise - Use flask to create a web server that returns some text when the page is accessed
+
+# Second exercise - Create a new route for /about that just renders "About us.."
+# - Add another route that takes in a string and adds "<name>'s profile" and returns it
