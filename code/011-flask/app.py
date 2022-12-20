@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 # Importing the Flask class which typically means creating a Flask Object
 
 # Creating a flask object
@@ -22,6 +22,12 @@ def shop_page(id):
     # data = db.findData(id)
     # return data
     return f"Page for shop {id}"
+
+@app.route("/coolhtml")
+def render_html():
+    return render_template("index.html", user = "Elon Musk")
+
+
 
 
 # Setting up my server
